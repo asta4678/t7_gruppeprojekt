@@ -86,14 +86,14 @@
       const urlParams = new URLSearchParams(window.location.search);
       const id = urlParams.get("id");
       console.log({ id });
-      let item;
+      let items = [];
 
-      const url = "https://dynamiskwebgruppe-47ce.restdb.io/rest/ajowebsite";
+      const url = "https://dynamiskwebgruppe-47ce.restdb.io/rest/ajowebsite/";
       const key = "620f579e34fd621565858797";
 
       async function hentData() {
         console.log("hentData");
-        const respons = await fetch(url, {
+        const respons = await fetch(url + id, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -111,7 +111,7 @@
           item.langbeskrivelse;
         document.querySelector(".pris").textContent =
           "Pris: " + item.pris + "DKK";
-        document.querySelector(".billede").src = "billeder/" + ret.billede;
+        document.querySelector(".billede").src = "billeder/" + item.billede;
       }
 
       //går tilbage til den side man var på sidst
