@@ -39,10 +39,37 @@ async function hentData() {
 }
 
 function vis() {
-    console.log(items);
-    main.innerHTML = "";
-    items.forEach((item) => {
-      if (filter == item.kategori || filter == "alle") {
-        let klon = temp.cloneNode(true).content;
-        klon.querySelector(".billede").src =
-          "billeder/" + item.billednavn + "-md.jpg";
+  console.log(items);
+  main.innerHTML = "";
+  items.forEach((item) => {
+    if (filter == item.kategori || filter == "alle") {
+      let klon = temp.cloneNode(true).content;
+      klon.querySelector(".billede").src = "billeder/" + item.billede;
+
+      /*Når man klikker på et billede, kommer man hen til en ny side*/
+      klon.querySelector("article").addEventListener("click", () => {
+        location.href = "singleview.html?id=" + item._id;
+      });
+
+      klon.querySelector(".navn").textContent = item.navn;
+      klon.querySelector(".kortbeskrivelse").textContent = item.kortbeskrivelse;
+      klon.querySelector(".pris").textContent = "Pris: " + item.pris + "DKK";
+
+      main.appendChild(klon);
+    }
+  });
+}
+
+// single-view
+
+function visDetaljer(item) {
+  console.log(item);
+  modal.querySelector("h1").textContent = item.navn;
+  modal.querySelector("img").src = "billeder/" + item.billede;
+
+  modal.style.display = "block";
+}
+
+modal.addEventListener("click", () => (modal.style.display = "none"));
+
+hentData();
