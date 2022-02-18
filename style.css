@@ -60,3 +60,15 @@ article {
 body {
   padding: 10px;
 }
+
+#first_section {
+  grid-column: 1/4;
+  display: grid;
+  height: 100vh;
+  background-size: cover;
+  background-position: 25% 10%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  margin: auto;
+  background-image: url(baggrundsbillede.jpg);
+}
