@@ -93,6 +93,21 @@ nav button#orange:hover {
   background-color: #ffb100;
 }
 
+/* styling af tilbage knap  */
+
+button {
+  font-size: 0.7em;
+  padding: 10px 10px 10px 10px;
+  background-color: #f4efec;
+  border: none;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+button :hover {
+  background-color: #ddcfb9;
+}
+
 /* styling så siden er responsiv  */
 
 main {
