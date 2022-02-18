@@ -1,0 +1,40 @@
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+/* styling af navigationsknapper  */
+
+nav {
+  text-align: center;
+  font-family: monospace;
+}
+
+nav button {
+  font-size: 0.7em;
+  padding: 10px 10px 10px 10px;
+  background-color: #f4efec;
+  border: none;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+nav button#beige:hover {
+  background-color: #ddcfb9;
+}
+
+nav button#blå:hover {
+  background-color: #0075fa;
+}
+
+nav button#grøn:hover {
+  background-color: #2fc197;
+}
+
+nav button#lyserød:hover {
+  background-color: #f59acd;
+}
+
+nav button#orange:hover {
+  background-color: #ffb100;
+}
