@@ -15,7 +15,8 @@ header {
 }
 
 .menu_color {
-  background-color: transparent;
+  background-color: white;
+  opacity: 40%;
 }
 
 .menu {
@@ -136,7 +137,7 @@ article {
   background-position: 25% 10%;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  margin: auto;
+  margin-top: -85px;
   background-image: url(baggrundsbillede.jpg);
 }
 
