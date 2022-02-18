@@ -1,13 +1,25 @@
+/* styling af fonte */
+
 h1 {
   display: flex;
   justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
 }
 
 /* styling af navigationsknapper  */
 
 nav {
   text-align: center;
-  font-family: monospace;
+  font-family: "Work Sans", sans-serif;
 }
 
 nav button {
