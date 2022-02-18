@@ -38,3 +38,25 @@ nav button#lyserød:hover {
 nav button#orange:hover {
   background-color: #ffb100;
 }
+
+/* styling så siden er responsiv  */
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+article {
+  justify-content: space-between;
+  text-align: center;
+  overflow: hidden;
+  margin: 10px;
+  padding-right: 20px;
+}
+
+body {
+  padding: 10px;
+}
