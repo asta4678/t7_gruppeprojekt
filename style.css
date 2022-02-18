@@ -123,3 +123,22 @@ body {
   margin: auto;
   background-image: url(baggrundsbillede.jpg);
 }
+
+/* styling af footer */
+
+p1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+}
+
+footer {
+  padding: 1rem;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+footer p {
+  margin: auto;
+  font-size: 0.8rem;
+}
