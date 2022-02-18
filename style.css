@@ -15,8 +15,7 @@ header {
 }
 
 .menu_color {
-  background-color: white;
-  opacity: 40%;
+  background-color: #ffffff55;
 }
 
 .menu {
@@ -32,7 +31,8 @@ header {
 a {
   font-family: "Work sans", sans-serif;
   text-decoration: none;
-  font-weight: 550;
+  font-size: 1.5rem;
+  font-weight: 350;
   color: black;
 }
 
@@ -52,10 +52,6 @@ h3 {
 
 p {
   font-family: "Work Sans", sans-serif;
-}
-
-a {
-  font-size: 2rem;
 }
 
 /* styling af navigationsknapper  */
