@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ajo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <header class="menu_color">
+    <nav>
+      <ul class="menu">
+        <div id="logo"></div>
+        <li><a href="forside.html">FORSIDE</a></li>
+        <li><a href="index.html">SHOP</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <button>Tilbage</button>
+    <main>
+      <article>
+        <h2 class="navn"></h2>
+        <p class="pris"></p>
+        <p class="beskrivelse"></p>
+        <img src="" alt="items" class="billede" />
+      </article>
+    </main>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const id = urlParams.get("id");
+      console.log({ id });
+      let item;
+
+      const url = "https://dynamiskwebgruppe-47ce.restdb.io/rest/ajowebsite";
+      const key = "620f579e34fd621565858797";
+
+      async function hentData() {
+        console.log("hentData");
+        const respons = await fetch(url, {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            "x-apikey": key,
+          },
+        });
+        item = await respons.json();
+        console.log(item);
+        vis();
+      }
+
+      function vis() {
+        document.querySelector(".navn").textContent = item.navn;
+        document.querySelector(".beskrivelse").textContent =
+          item.langbeskrivelse;
+        document.querySelector(".pris").textContent =
+          "Pris: " + item.pris + "DKK";
+        document.querySelector(".billede").src = "billeder/" + item.billede;
+      }
+
+      //går tilbage til den side man var på sidst
+      document.querySelector("button").addEventListener("click", () => {
+        history.back();
+      });
+
+      hentData();
+    </script>
+  </body>
+</html>
