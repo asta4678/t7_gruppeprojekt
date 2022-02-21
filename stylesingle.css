@@ -41,6 +41,12 @@ a {
   color: black;
 }
 
+/* billede på body */
+
+body {
+  background-image: url("baggrundopacity.png");
+  background-size: cover;
+}
 /* styling af fonte */
 
 h1 {
@@ -64,24 +70,7 @@ p {
   font-family: "Work Sans", sans-serif;
 }
 
-/* styling af knapper  */
-
-@media (min-width: 800px) {
-  button {
-    font-size: 0.7em;
-    padding: 10px 10px 10px 10px;
-    margin-top: 20px;
-    margin-left: 23px;
-    background-color: white;
-    border: none;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
-
-  button:hover {
-    background-color: #a6c9e5;
-  }
-}
+/* styling af knapper i mobilversion  */
 
 @media (max-width: 799px) {
   button {
@@ -111,11 +100,23 @@ p {
   }
 }
 
-/* billede på body */
+/* styling af knapper i desktopversion  */
 
-body {
-  background-image: url("baggrundopacity.png");
-  background-size: cover;
+@media (min-width: 800px) {
+  button {
+    font-size: 0.7em;
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+    margin-left: 23px;
+    background-color: white;
+    border: none;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  button:hover {
+    background-color: #a6c9e5;
+  }
 }
 
 /* styling af mobilversion  */
