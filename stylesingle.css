@@ -8,25 +8,29 @@
 /* styling af header */
 
 header {
-  display: flex;
-  justify-content: center;
+  background-color: #ffffff55;
   position: sticky;
   top: 0;
   padding: 0rem 1.5rem;
 }
 
-.menu_color {
-  background-color: #ffffff55;
-}
-
 .menu {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
   margin: 0.1vw;
   padding: 1.5vw;
   overflow-x: auto;
   gap: 8.5vw;
+}
+
+.logo a {
+  font-size: 2.5rem;
+}
+
+.shop a {
+  color: #ce748d;
 }
 
 a {
@@ -60,47 +64,51 @@ p {
   font-family: "Work Sans", sans-serif;
 }
 
-/* styling af tilbage knap  */
+/* styling af knapper  */
 
-button {
-  font-size: 0.7em;
-  padding: 10px 10px 10px 10px;
-  margin-top: 20px;
-  margin-left: 23px;
-  background-color: white;
-  border: none;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+@media (min-width: 800px) {
+  button {
+    font-size: 0.7em;
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+    margin-left: 23px;
+    background-color: white;
+    border: none;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  button:hover {
+    background-color: #a6c9e5;
+  }
 }
 
-.størrelse {
-  font-size: 0.7em;
-  padding: 10px 10px 10px 10px;
-  margin-top: 20px;
-  margin-left: 23px;
-  background-color: white;
-  border: none;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
+@media (max-width: 799px) {
+  button {
+    font-size: 0.7em;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: white;
+  }
 
-button:hover {
-  background-color: #a6c9e5;
-}
+  button:hover {
+    background-color: #a6c9e5;
+  }
 
-/* styling af footer */
+  button.tilbage {
+    font-size: 0.7em;
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+    margin-left: 23px;
+    background-color: white;
+    border: none;
+    text-transform: uppercase;
+  }
 
-p1 {
-  font-family: "Work Sans", sans-serif;
-  font-weight: bold;
-}
-
-footer p {
-  margin: auto;
-  font-size: 0.8rem;
-}
-footer {
-  padding: 1.5%;
+  button.tilbage:hover {
+    background-color: #a6c9e5;
+  }
 }
 
 /* billede på body */
@@ -119,7 +127,18 @@ body {
   width: 100%;
 }
 
-/* styling af decktopversion */
+@media (max-width: 799px) {
+  h1 {
+    margin-top: 10px;
+  }
+
+  .beskrivelse {
+    max-width: 40ch;
+  }
+}
+
+/* styling af desktopversion */
+
 @media (min-width: 800px) {
   main {
     max-width: 1200px;
@@ -147,4 +166,24 @@ body {
     text-align: right;
     margin-top: 30px;
   }
+
+  .beskrivelse {
+    max-width: 40ch;
+    margin-left: 120px;
+  }
+}
+
+/* styling af footer */
+
+p1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+}
+
+footer p {
+  margin: auto;
+  font-size: 0.8rem;
+}
+footer {
+  padding: 1.5%;
 }
