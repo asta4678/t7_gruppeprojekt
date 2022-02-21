@@ -147,7 +147,7 @@ article {
   background-position: 25% 10%;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  margin-top: -85px;
+  margin-top: -95px;
   background-image: url(baggrundsbillede.jpg);
 }
 
