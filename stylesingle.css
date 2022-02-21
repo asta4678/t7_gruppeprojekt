@@ -1,29 +1,125 @@
-main {
-  display: grid;
-  grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+/* styling af header */
+
+header {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  padding: 0rem 1.5rem;
 }
 
-main article {
-  grid-column: 2/3;
+.menu_color {
+  background-color: #ffffff55;
 }
 
-/* desktop */
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0.1vw;
+  padding: 1.5vw;
+  overflow-x: auto;
+  gap: 8.5vw;
+}
+
+a {
+  font-family: "Work sans", sans-serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 350;
+  color: black;
+}
+
+/* styling af fonte */
+
+h1 {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
 @media (min-width: 800px) {
-  img {
-    width: 50%;
-    object-fit: cover;
-    margin-top: -4rem;
-    padding-left: 170px;
-    grid-column: 1/2;
+  h1 {
+    justify-content: right;
+  }
+}
+
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* styling af tilbage knap  */
+
+button {
+  font-size: 0.7em;
+  padding: 10px 10px 10px 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: white;
+  border: none;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+button :hover {
+  background-color: #ddcfb9;
+}
+
+/* styling af footer */
+
+p1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+}
+
+footer p {
+  margin: auto;
+  font-size: 0.8rem;
+}
+footer {
+  padding: 1.5%;
+}
+
+/* styling af mobilversion  */
+.enkelt {
+  padding-left: 20px;
+}
+
+.visbillede {
+  width: 100%;
+}
+
+/* styling af decktopversion */
+@media (min-width: 800px) {
+  main {
+    max-width: 1200px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .enkelt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+  }
+
+  .visbillede {
+    display: block;
+    margin-left: 50px;
+    margin-right: auto;
+    margin-bottom: 70px;
+    width: 70%;
+    height: 80%;
   }
 
   .info {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 0.5rem;
-    margin-top: 45px;
-    padding: 1rem;
-    padding-right: 140px;
-    grid-column: 2/2;
+    padding: 20px;
+    text-align: right;
+    margin-top: 30px;
   }
 }
