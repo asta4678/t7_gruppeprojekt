@@ -1,7 +1,7 @@
 /*fjerner whitespace i siderne*/
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 /**/
@@ -15,7 +15,7 @@ header {
 }
 
 .menu_color {
-  background-color: white;
+  background-color: #ffffff55;
 }
 
 .menu {
@@ -31,7 +31,8 @@ header {
 a {
   font-family: "Work sans", sans-serif;
   text-decoration: none;
-  font-weight: 550;
+  font-size: 1.5rem;
+  font-weight: 350;
   color: black;
 }
 
@@ -41,6 +42,7 @@ h1 {
   display: flex;
   justify-content: center;
   font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
 }
 
 h2,
@@ -62,37 +64,52 @@ nav {
 nav button {
   font-size: 0.7em;
   padding: 10px 10px 10px 10px;
-  background-color: #f4efec;
+  background-color: #ddcfb9;
   border: none;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
 nav button#beige:hover {
-  background-color: #ddcfb9;
+  background-color: #f4efec;
 }
 
 nav button#blå:hover {
-  background-color: #0075fa;
+  background-color: #ce748d;
 }
 
 nav button#grøn:hover {
-  background-color: #2fc197;
+  background-color: #d9adc8;
 }
 
 nav button#lyserød:hover {
-  background-color: #f59acd;
+  background-color: #a6c9e5;
 }
 
 nav button#orange:hover {
-  background-color: #ffb100;
+  background-color: #ebc0ca;
+}
+
+/* styling af tilbage knap  */
+
+button {
+  font-size: 0.7em;
+  padding: 10px 10px 10px 10px;
+  background-color: #f4efec;
+  border: none;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+button :hover {
+  background-color: #ddcfb9;
 }
 
 /* styling så siden er responsiv  */
 
 main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 10px;
   justify-content: center;
   margin-top: 10px;
@@ -106,10 +123,6 @@ article {
   padding-right: 20px;
 }
 
-body {
-  padding: 10px;
-}
-
 /* respnsivt splashfoto */
 
 #first_section {
@@ -120,7 +133,7 @@ body {
   background-position: 25% 10%;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  margin: auto;
+  margin-top: -85px;
   background-image: url(baggrundsbillede.jpg);
 }
 
@@ -131,65 +144,10 @@ p1 {
   font-weight: bold;
 }
 
-footer {
-  padding: 1rem;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
 footer p {
   margin: auto;
   font-size: 0.8rem;
 }
-
-/* singleview */
-
-img {
-  width: 100%;
-  margin-top: 20px;
-}
-
-h2 {
-  text-align: center;
-  font-size: 2rem;
-  font-family: "Futura bold", sans-serif;
-  color: rgb(63, 63, 63);
-  margin-top: 30px;
-}
-
-.pris {
-  text-align: center;
-}
-
-p {
-  text-align: center;
-}
-@media (min-width: 800px) {
-  img {
-    max-width: 50%;
-    padding-left: 360px;
-  }
-  h2 {
-    text-align: center;
-    font-size: 2rem;
-    font-family: "Futura bold", sans-serif;
-    color: rgb(63, 63, 63);
-  }
-
-  p {
-    margin: 0.5rem;
-    margin-top: 45px;
-    padding: 1rem;
-    right: 50px;
-    grid-column: 2/2;
-  }
-
-  .pris {
-    text-align: center;
-  }
-
-  .langbeskrivelse {
-    text-align: center;
-  }
+footer {
+  padding: 1.5%;
 }

@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+  <meta charset="UTF-8" />
   <head>
     <link rel="icon" type="image/x-icon" href="favicon.svg" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <title>ajo</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon/favicon.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
       rel="stylesheet"
@@ -14,40 +18,47 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+
+    <title>singleview</title>
   </head>
   <header class="menu_color">
     <nav>
       <ul class="menu">
         <div id="logo"></div>
-        <li><a href="forside.html">FORSIDE</a></li>
-        <li><a href="index.html">SHOP</a></li>
+        <li><a href="forside.html">ajo</a></li>
+        <li><a href="index.html">Shop</a></li>
       </ul>
     </nav>
   </header>
-  <body>
+  <body style="background-image: url(baggrundopacity.png)">
     <button>Tilbage</button>
     <main>
       <article>
-        <h2 class="navn"></h2>
+        <h1 class="navn"></h1>
         <p class="pris"></p>
         <p class="beskrivelse"></p>
-        <img src="" alt="items" class="billede" />
+        <img src="" alt="item" class="billede" />
       </article>
     </main>
-
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       const id = urlParams.get("id");
       console.log({ id });
-      let item;
+      let items = [];
 
-      const url = "https://dynamiskwebgruppe-47ce.restdb.io/rest/ajowebsite";
+      const url = "https://dynamiskwebgruppe-47ce.restdb.io/rest/ajowebsite/";
       const key = "620f579e34fd621565858797";
 
       async function hentData() {
         console.log("hentData");
-        const respons = await fetch(url, {
+        const respons = await fetch(url + id, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
