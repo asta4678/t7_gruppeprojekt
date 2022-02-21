@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+article {
+  padding-bottom: 20px;
+}
+
 header {
   background-color: #ffffff55;
   position: sticky;
