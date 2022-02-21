@@ -1,3 +1,10 @@
+/*fjerner whitespace i siderne*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* styling af header */
 
 header {
@@ -59,7 +66,7 @@ button {
   font-size: 0.7em;
   padding: 10px 10px 10px 10px;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 23px;
   background-color: white;
   border: none;
   text-transform: uppercase;
@@ -87,7 +94,7 @@ footer {
 
 /* styling af mobilversion  */
 .enkelt {
-  padding-left: 20px;
+  padding-left: 23px;
 }
 
 .visbillede {
