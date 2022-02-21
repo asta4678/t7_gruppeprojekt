@@ -77,23 +77,23 @@ nav button {
   margin-bottom: 10px;
 }
 
-nav button#beige:hover {
+nav button#farve1:hover {
   background-color: #f4efec;
 }
 
-nav button#blå:hover {
+nav button#farve2:hover {
   background-color: #ce748d;
 }
 
-nav button#grøn:hover {
+nav button#farve3:hover {
   background-color: #d9adc8;
 }
 
-nav button#lyserød:hover {
+nav button#farve4:hover {
   background-color: #a6c9e5;
 }
 
-nav button#orange:hover {
+nav button#farve5:hover {
   background-color: #ebc0ca;
 }
 
