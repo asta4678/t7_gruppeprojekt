@@ -64,14 +64,14 @@ nav {
 nav button {
   font-size: 0.7em;
   padding: 10px 10px 10px 10px;
-  background-color: #f4efec;
+  background-color: #ddcfb9;
   border: none;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
 nav button#beige:hover {
-  background-color: #ddcfb9;
+  background-color: #f4efec;
 }
 
 nav button#blå:hover {
