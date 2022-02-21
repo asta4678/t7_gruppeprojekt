@@ -22,6 +22,14 @@ header {
   gap: 8.5vw;
 }
 
+.logo a {
+  font-size: 2.5rem;
+}
+
+.shop a {
+  color: #ce748d;
+}
+
 a {
   font-family: "Work sans", sans-serif;
   text-decoration: none;
