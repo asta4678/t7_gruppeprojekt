@@ -1,10 +1,147 @@
-main {
-  display: grid;
-  grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+/*fjerner whitespace i siderne*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-main article {
-  grid-column: 2/3;
+/* styling af header */
+
+header {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  padding: 0rem 1.5rem;
 }
 
+.menu_color {
+  background-color: #ffffff55;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0.1vw;
+  padding: 1.5vw;
+  overflow-x: auto;
+  gap: 8.5vw;
+}
+
+a {
+  font-family: "Work sans", sans-serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 350;
+  color: black;
+}
+
+/* styling af fonte */
+
+h1 {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+<<<<<<< HEAD
 article
+=======
+@media (min-width: 800px) {
+  h1 {
+    justify-content: right;
+  }
+}
+
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* styling af tilbage knap  */
+
+button {
+  font-size: 0.7em;
+  padding: 10px 10px 10px 10px;
+  margin-top: 20px;
+  margin-left: 23px;
+  background-color: white;
+  border: none;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.størrelse {
+  font-size: 0.7em;
+  padding: 10px 10px 10px 10px;
+  margin-top: 20px;
+  margin-left: 23px;
+  background-color: white;
+  border: none;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #a6c9e5;
+}
+
+/* styling af footer */
+
+p1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+}
+
+footer p {
+  margin: auto;
+  font-size: 0.8rem;
+}
+footer {
+  padding: 1.5%;
+}
+
+/* styling af mobilversion  */
+.enkelt {
+  padding-left: 23px;
+}
+
+.visbillede {
+  width: 100%;
+}
+
+/* styling af decktopversion */
+@media (min-width: 800px) {
+  main {
+    max-width: 1200px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .enkelt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+  }
+
+  .visbillede {
+    display: block;
+    margin-left: 50px;
+    margin-right: auto;
+    margin-bottom: 70px;
+    width: 70%;
+    height: 80%;
+  }
+
+  .info {
+    padding: 20px;
+    text-align: right;
+    margin-top: 30px;
+  }
+}
+>>>>>>> c0aba123b462fa3e5e7b0e8ca1a088f97bf0b1de

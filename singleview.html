@@ -40,6 +40,7 @@
   <body style="background-image: url(baggrundopacity.png)">
     <button>Tilbage</button>
     <main>
+
         <article>
           <div class="enkelt">
             <div class="info">
@@ -52,6 +53,21 @@
             </div>
           </div>
         </article>
+      <article>
+        <div class="enkelt">
+          <div class="visbillede">
+            <img src="" alt="item" class="billede" />
+          </div>
+          <div class="info">
+            <h1 class="navn"></h1>
+            <p class="pris"></p>
+            <p class="beskrivelse"></p>
+            <button class="størrelse">S</button>
+            <button class="størrelse">M</button>
+            <button class="størrelse">L</button>
+          </div>
+        </div>
+      </article>
     </main>
     <script>
       const urlParams = new URLSearchParams(window.location.search);
@@ -92,5 +108,18 @@
 
       hentData();
     </script>
+    <footer style="background-color: #f4efec">
+      <p1>Kontakt</p1>
+      <p>Nordre Strandvej 100, DK-3148 Ålsgårde</p>
+      <p>+45 23 24 28 39</p>
+      <p>info@ajo.com</p>
+
+      <br />
+
+      <p>
+        *Bilederne er lånt af NEO NOIR i forbindelse med en skoleopgave til
+        internt brug og der er givet lov.
+      </p>
+    </footer>
   </body>
 </html>
