@@ -64,7 +64,7 @@ nav {
 nav button {
   font-size: 0.7em;
   padding: 10px 10px 10px 10px;
-  background-color: #ddcfb9;
+  background-color: white;
   border: none;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -113,6 +113,7 @@ main {
   grid-gap: 10px;
   justify-content: center;
   margin-top: 10px;
+  padding-left: 20px;
 }
 
 article {
@@ -121,6 +122,12 @@ article {
   overflow: hidden;
   margin: 10px;
   padding-right: 20px;
+}
+
+@media (max-width: 500px) {
+  main {
+    padding-left: 15px;
+  }
 }
 
 /* respnsivt splashfoto */
