@@ -7,4 +7,23 @@ main article {
   grid-column: 2/3;
 }
 
-article
+/* desktop */
+@media (min-width: 800px) {
+  img {
+    width: 50%;
+    object-fit: cover;
+    margin-top: -4rem;
+    padding-left: 170px;
+    grid-column: 1/2;
+  }
+
+  .info {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0.5rem;
+    margin-top: 45px;
+    padding: 1rem;
+    padding-right: 140px;
+    grid-column: 2/2;
+  }
+}
