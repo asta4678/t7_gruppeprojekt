@@ -45,9 +45,6 @@ h1 {
   margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
-article
-=======
 @media (min-width: 800px) {
   h1 {
     justify-content: right;
@@ -151,4 +148,3 @@ footer {
     margin-top: 30px;
   }
 }
->>>>>>> c0aba123b462fa3e5e7b0e8ca1a088f97bf0b1de
