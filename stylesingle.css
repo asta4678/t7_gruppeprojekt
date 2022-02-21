@@ -102,6 +102,11 @@ footer {
     margin-right: 150px;
   }
 
+  body {
+    background-image: url("baggrundopacity.png");
+    background-size: cover;
+  }
+
   .enkelt {
     display: grid;
     grid-template-columns: 1fr 1fr;
