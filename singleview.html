@@ -25,7 +25,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-
+    <link rel="stylesheet" href="stylesingle.css" />
     <title>singleview</title>
   </head>
   <header class="menu_color">
@@ -40,12 +40,18 @@
   <body style="background-image: url(baggrundopacity.png)">
     <button>Tilbage</button>
     <main>
-      <article>
-        <h1 class="navn"></h1>
-        <p class="pris"></p>
-        <p class="beskrivelse"></p>
-        <img src="" alt="item" class="billede" />
-      </article>
+        <article>
+          <div class="enkelt">
+            <div class="info">
+              <h1 class="navn"></h1>
+              <p class="pris"></p>
+              <p class="beskrivelse"></p>
+            </div>
+            <div class="visbillede">
+              <img src="" alt="item" class="billede" />
+            </div>
+          </div>
+        </article>
     </main>
     <script>
       const urlParams = new URLSearchParams(window.location.search);
