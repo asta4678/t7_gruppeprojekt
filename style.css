@@ -32,7 +32,7 @@ header {
 }
 
 .shop a {
-  color: #ce748d;
+  color: black;
 }
 
 a {
@@ -164,7 +164,22 @@ article {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
   margin-top: -95px;
-  background-image: url(baggrundopacity.png);
+  background-image: url(webforside.png);
+}
+
+@media (max-width: 800px) {
+  #first_section {
+    background-image: url(billede3.jpg);
+    background-size: cover;
+  }
+}
+
+@media (min-width: 801px) {
+  #first_section {
+    width: 100%;
+    height: 110vh;
+    background-image: url(webforside.png);
+  }
 }
 
 /* respnsivt baggrundsbillede til shop siden */
@@ -172,22 +187,6 @@ article {
 body {
   background-image: url(baggrundopacity.png);
   background-size: contain;
-}
-
-.pinkbluse {
-  width: 100%;
-}
-
-.orangekjole {
-  width: 100%;
-}
-
-.beigebluse {
-  width: 100%;
-}
-
-.lillakjole {
-  width: 100%;
 }
 
 /* styling af billeder med hover  */
