@@ -4,11 +4,9 @@
     <link rel="icon" type="image/x-icon" href="favicon.svg" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-    <title>ajo</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-    <link rel="icon" type="image/png" href="/favicon/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>forside</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
       rel="stylesheet"
@@ -23,53 +21,31 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
   </head>
-  <header>
-    <nav>
-      <ul class="menu">
-        <li class="logo">
-          <a href="forside.html">ajo</a>
-        </li>
-        <li class="shop">
-          <a href="index.html">
-            <span id="s">S</span>
-            <span id="h">h</span>
-            <span id="o">o</span>
-            <span id="p">p</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+
   <body>
-    <aside id="modal">
-      <article>
-        <img src="" alt="" />
-        <h2></h2>
-        <p></p>
-        <p></p>
-      </article>
-    </aside>
-    <template>
-      <article>
-        <img src="" alt="tøj" class="billede" />
-        <h2 class="navn"></h2>
-        <p class="pris"></p>
-        <p class="kortbeskrivelse"></p>
-      </article>
-    </template>
-    <h1>Alle</h1>
-    <nav>
-      <button data-kategori="alle" class="valgt" id="farve1">Alle</button>
-      <button data-kategori="overdele" id="farve2">Overdele</button>
-      <button data-kategori="underdele" id="farve3">Underdele</button>
-      <button data-kategori="kjoler" id="farve4">Kjoler</button>
-      <button data-kategori="jakker" id="farve5">Jakker</button>
-    </nav>
-
-    <main></main>
-
+    <header>
+      <nav>
+        <ul class="menu">
+          <li class="logo">
+            <a href="index.html">ajo</a>
+          </li>
+          <li class="shop">
+            <a href="shop.html">
+              <span>S</span>
+              <span>h</span>
+              <span>o</span>
+              <span>p</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="first_section">
+      <img class="pinkbluse" src="billede1.jpg" alt="" />
+      <img class="beigebluse" src="billede4.jpg" alt="" />
+      <img class="orangekjole" src="billede2.jpg" alt="" />
+    </main>
     <footer>
       <p1>Kontakt</p1>
       <p>Guldbergsgade 29N, 2200 København</p>
@@ -83,6 +59,5 @@
         internt brug og der er givet lov.
       </p>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>
