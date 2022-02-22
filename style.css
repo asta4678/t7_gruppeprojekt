@@ -184,6 +184,11 @@ body {
   width: 100%;
 }
 
+/* styling af billeder med hover  */
+.billede:hover {
+  opacity: 0.5;
+}
+
 /* styling af footer */
 
 p1 {
