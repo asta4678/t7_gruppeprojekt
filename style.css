@@ -43,6 +43,22 @@ a {
   color: black;
 }
 
+#s {
+  color: #ce748d;
+}
+
+#h {
+  color: #d9adc8;
+}
+
+#o {
+  color: #a6c9e5;
+}
+
+#p {
+  color: #ebc0ca;
+}
+
 /* styling af fonte */
 
 h1 {
@@ -168,6 +184,11 @@ body {
   width: 100%;
 }
 
+/* styling af billeder med hover  */
+.billede:hover {
+  opacity: 0.5;
+}
+
 /* styling af footer */
 
 p1 {
@@ -181,4 +202,5 @@ footer p {
 }
 footer {
   padding: 1.5%;
+  background-color: #f4efec;
 }
