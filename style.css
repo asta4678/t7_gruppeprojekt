@@ -153,7 +153,7 @@ article {
   }
 }
 
-/* respnsivt splashfoto */
+/* respnsivt baggrundsbillede til forsiden */
 
 #first_section {
   grid-column: 1/4;
@@ -166,6 +166,8 @@ article {
   margin-top: -95px;
   background-image: url(baggrundopacity.png);
 }
+
+/* respnsivt baggrundsbillede til shop siden */
 
 body {
   background-image: url(baggrundopacity.png);
