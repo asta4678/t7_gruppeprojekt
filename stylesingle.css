@@ -53,12 +53,11 @@ h2 {
 }
 
 
-@media (min-width: 800px) {
-  h2 {
+/* @media (min-width: 800px) {
+  h2 { */
 
 @media (min-width: 900px) {
   h1 {
-
     justify-content: right;
   }
 }
@@ -126,8 +125,8 @@ p {
   width: 100%;
 }
 
-@media (max-width: 499px) {
-  h2 {
+/* @media (max-width: 499px) {
+  h2 { */
 
 @media (max-width: 499px) {
   h1 {
