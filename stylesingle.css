@@ -65,21 +65,17 @@ body {
 }
 /* styling af fonte */
 
-h1 {
+h2 {
   display: flex;
   font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
   margin-bottom: 10px;
 }
 
 @media (min-width: 800px) {
-  h1 {
+  h2 {
     justify-content: right;
   }
-}
-
-h2,
-h3 {
-  font-family: "Roboto", sans-serif;
 }
 
 p {
@@ -144,8 +140,8 @@ p {
   width: 100%;
 }
 
-@media (max-width: 799px) {
-  h1 {
+@media (max-width: 499px) {
+  h2 {
     margin-top: 10px;
   }
 
@@ -156,7 +152,7 @@ p {
 
 /* styling af desktopversion */
 
-@media (min-width: 800px) {
+@media (min-width: 799px) {
   main {
     max-width: 1200px;
     margin-left: 150px;
@@ -192,9 +188,11 @@ p {
 
 /* styling af footer */
 
-p1 {
+h3 {
   font-family: "Work Sans", sans-serif;
   font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 5px;
 }
 
 footer p {
