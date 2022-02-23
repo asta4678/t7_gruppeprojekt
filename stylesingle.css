@@ -84,7 +84,7 @@ p {
     font-size: 0.7em;
     padding: 10px 10px 10px 10px;
     margin-top: 20px;
-    margin-left: 23px;
+    margin-left: 44px;
     background-color: white;
     border: none;
     text-transform: uppercase;
@@ -116,7 +116,7 @@ p {
 
 /* styling af mobilversion  */
 .enkelt {
-  padding-left: 23px;
+  padding-left: 44px;
 }
 
 .visbillede {
