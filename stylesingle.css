@@ -29,32 +29,12 @@ header {
   font-size: 2.5rem;
 }
 
-.shop a {
-  color: #ce748d;
-}
-
 a {
   font-family: "Work sans", sans-serif;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 350;
   color: black;
-}
-
-#s {
-  color: #ce748d;
-}
-
-#h {
-  color: #d9adc8;
-}
-
-#o {
-  color: #a6c9e5;
-}
-
-#p {
-  color: #ebc0ca;
 }
 
 /* billede på body */
