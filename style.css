@@ -190,8 +190,15 @@ body {
 }
 
 /* styling af billeder med hover  */
-.billede:hover {
-  opacity: 0.5;
+.img-hover {
+  height: 500px;
+  width: 400px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.img-hover:hover {
+  transform: scale(1.1);
 }
 
 /* styling af footer */
