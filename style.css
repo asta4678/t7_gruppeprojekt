@@ -31,32 +31,12 @@ header {
   font-size: 2.5rem;
 }
 
-.shop a {
-  color: black;
-}
-
 a {
   font-family: "Work sans", sans-serif;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 350;
   color: black;
-}
-
-#s {
-  color: #ce748d;
-}
-
-#h {
-  color: #d9adc8;
-}
-
-#o {
-  color: #a6c9e5;
-}
-
-#p {
-  color: #ebc0ca;
 }
 
 /* styling af fonte */
@@ -196,8 +176,15 @@ body {
 }
 
 /* styling af billeder med hover  */
-.billede:hover {
-  opacity: 0.5;
+.img-hover {
+  height: 500px;
+  width: 400px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.img-hover:hover {
+  transform: scale(1.1);
 }
 
 /* styling af footer */
