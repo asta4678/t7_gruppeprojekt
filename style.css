@@ -176,16 +176,17 @@ body {
 }
 
 /* styling af billeder med hover  */
+
 .img-hover {
   height: 500px;
   width: 400px;
   transition: 0.5s;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .img-hover:hover {
   transform: scale(0.9);
-  opacity: 0.7;
 }
 
 /* styling af footer */
