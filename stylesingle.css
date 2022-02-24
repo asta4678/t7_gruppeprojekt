@@ -45,22 +45,21 @@ body {
 }
 /* styling af fonte */
 
-h1 {
+.navn {
   display: flex;
   font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
   margin-bottom: 10px;
 }
 
-@media (min-width: 900px) {
-  h1 {
+/* @media (min-width: 800px) {
+  h2 { */
+
+/* @media (min-width: 900px) {
+  h2 {
     justify-content: right;
   }
-}
-
-h2,
-h3 {
-  font-family: "Roboto", sans-serif;
-}
+} */
 
 p {
   font-family: "Work Sans", sans-serif;
@@ -85,7 +84,7 @@ p {
     font-size: 0.7em;
     padding: 10px 10px 10px 10px;
     margin-top: 20px;
-    margin-left: 23px;
+    margin-left: 44px;
     background-color: white;
     border: none;
     text-transform: uppercase;
@@ -117,11 +116,15 @@ p {
 
 /* styling af mobilversion  */
 .enkelt {
-  padding-left: 23px;
+  padding-left: 44px;
+}
+
+.visbillede {
+  width: 100%;
 }
 
 @media (max-width: 499px) {
-  h1 {
+  h2 {
     margin-top: 10px;
   }
 
@@ -168,13 +171,23 @@ p {
     max-width: 40ch;
     margin-left: 120px;
   }
+
+  .navn {
+    display: flex;
+    justify-content: right;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
 }
 
 /* styling af footer */
 
-p1 {
+h3 {
   font-family: "Work Sans", sans-serif;
   font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 5px;
 }
 
 footer p {
