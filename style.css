@@ -98,15 +98,15 @@ nav button#farve5:hover {
 }
 
 /* styling af forsideknap */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   #forsideknap {
+    width: 130px;
     font-size: 0.7em;
     padding: 20px 20px 20px 20px;
     background-color: #f4efec;
     border: none;
-    text-transform: uppercase;
-    margin-left: 200px;
-    margin-top: 330px;
+    margin-left: 180px;
+    margin-top: 350px;
   }
 
   #forsideknap:hover {
@@ -114,15 +114,15 @@ nav button#farve5:hover {
   }
 }
 
-@media (min-width: 501px) {
+@media (min-width: 601px) {
   #forsideknap {
-    font-size: 0.7em;
+    width: 170px;
+    font-size: 0.9em;
     padding: 20px 20px 20px 20px;
     background-color: #f4efec;
     border: none;
-    text-transform: uppercase;
-    margin-left: 650px;
-    margin-top: 330px;
+    margin-left: 590px;
+    margin-top: 370px;
   }
 
   #forsideknap:hover {
