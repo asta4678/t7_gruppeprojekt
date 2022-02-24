@@ -171,7 +171,8 @@ article {
 /* respnsivt baggrundsbillede til shop siden */
 
 body {
-  background-image: url(baggrundopacity.png);
+  /* background-image: url(baggrundopacity.png); */
+  background-image: url(sky.jpg);
   background-size: contain;
 }
 
