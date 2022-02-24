@@ -98,6 +98,8 @@ nav button#farve5:hover {
 }
 
 /* styling af forsideknap */
+
+/* Mobil */
 @media (max-width: 600px) {
   #forsideknap {
     width: 130px;
@@ -107,6 +109,7 @@ nav button#farve5:hover {
     border: none;
     margin-left: 180px;
     margin-top: 350px;
+    position: sticky;
   }
 
   #forsideknap:hover {
@@ -114,6 +117,7 @@ nav button#farve5:hover {
   }
 }
 
+/* Desktop */
 @media (min-width: 601px) {
   #forsideknap {
     width: 170px;
