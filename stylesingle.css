@@ -52,22 +52,21 @@ body {
   margin-bottom: 10px;
 }
 
-/* @media (min-width: 800px) {
-  h2 { */
-
-/* @media (min-width: 900px) {
-  h2 {
-    justify-content: right;
-  }
-} */
-
 p {
   font-family: "Work Sans", sans-serif;
 }
 
+ img {
+    margin-bottom: 5px;
+  }
+
 /* styling af knapper i mobilversion  */
 
 @media (max-width: 799px) {
+  p {
+    margin-right: 40px;
+  }
+
   button {
     font-size: 0.7em;
     padding: 10px 10px 10px 10px;
@@ -124,6 +123,7 @@ p {
 }
 
 @media (max-width: 499px) {
+
   h2 {
     margin-top: 10px;
   }
