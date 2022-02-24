@@ -40,7 +40,7 @@ a {
 /* billede på body */
 
 body {
-  background-image: url("baggrundopacity.png");
+  background-image: url(sky.png);
   background-size: cover;
 }
 /* styling af fonte */
@@ -56,9 +56,9 @@ p {
   font-family: "Work Sans", sans-serif;
 }
 
- img {
-    margin-bottom: 5px;
-  }
+img {
+  margin-bottom: 5px;
+}
 
 /* styling af knapper i mobilversion  */
 
@@ -123,7 +123,6 @@ p {
 }
 
 @media (max-width: 499px) {
-
   h2 {
     margin-top: 10px;
   }

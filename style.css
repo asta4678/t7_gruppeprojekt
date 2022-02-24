@@ -204,9 +204,8 @@ article {
 /* respnsivt baggrundsbillede til shop siden */
 
 body {
-  /* background-image: url(baggrundopacity.png); */
-  background-image: url(gradient.jpg);
-  background-size: contain;
+  background-image: url(sky.png);
+  background-size: cover;
 }
 
 /* styling af billeder med hover  */
