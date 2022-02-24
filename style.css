@@ -148,13 +148,13 @@ article {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
   margin-top: -95px;
-  background-image: url(webforside.png);
+  background-image: url(forside.png);
 }
 
 /* mobile baggrundsbillede */
 @media (max-width: 800px) {
   #first_section {
-    background-image: url(billede3.jpg);
+    background-image: url(forsidebillede.png);
     background-size: cover;
   }
 }
@@ -164,7 +164,7 @@ article {
   #first_section {
     width: 100%;
     height: 110vh;
-    background-image: url(webforside.png);
+    background-image: url(forside.png);
   }
 }
 
